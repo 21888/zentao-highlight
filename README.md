@@ -4,6 +4,10 @@
 
 脚本会监听禅道 QA iframe 内的表格内容，把 `confirmed` 列中包含“已确认”的整行高亮，并在 `id` 列增加左侧强调边框，方便快速识别已确认记录。
 
+## 效果截图
+
+![禅道表格-已确认高亮效果](./pictures.png)
+
 ## 功能特性
 
 - 自动等待 iframe 和表格内容加载完成后再执行
@@ -118,6 +122,7 @@ const ID_CLASS = 'tm-confirmed-row-id';
 ```text
 .
 ├── README.md
+├── pictures.png
 └── zentao-highlight.user.js
 ```
 
@@ -125,5 +130,4 @@ const ID_CLASS = 'tm-confirmed-row-id';
 
 如果你准备长期放在 GitHub 维护，建议顺手再做两件事：
 
-- 增加仓库截图，展示高亮前后效果
 - 视需要补充 `LICENSE`
